@@ -1,0 +1,18 @@
+%\documentclass[preview, convert={density=300}]{standalone}
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+
+\[\arraycolsep=0.0pt\def\arraystretch{1.3}
+\text{bin\_loc}(x) = \left\{ \begin{array}{ll}
+\frac{1}{n_{bins}} \left\lfloor \frac{x - \min(x)}{\max(x) - \min(x)} \times n_{bins} \right\rfloor \times \{\max(x) - \min(x)\} + \min(x), &\quad \text{if } x < \max(x) \\
+\frac{n_{bins} - 1}{n_{bins}} \times \{\max(x) - \min(x) \} + \min(x), & \quad \text{if } x = \max(x)
+\end{array}   \right. \]
+
+
+
+\end{document}

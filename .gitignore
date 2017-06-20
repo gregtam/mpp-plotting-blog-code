@@ -1,0 +1,9 @@
+.*
+
+*.pyc
+
+*.Rproj
+
+*.aux
+*.gz
+*.log
